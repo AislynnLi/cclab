@@ -1,0 +1,27 @@
+p {
+  font-size: 25px;
+  /*background-color: lightyellow;*/
+}
+body {
+  font-family: fantasy;
+  background-color: pink;
+}
+
+h1{
+  color: rgb(255,246,0);
+}
+
+a {
+  color: black;
+  text-decoration: line-through;
+  cursor:not-allowed;
+}
+
+.info_text {
+  background-color: lightyellow;
+  font-weight: bold;
+}
+
+#logo {
+  margin-left:20px;
+}

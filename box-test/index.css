@@ -1,0 +1,19 @@
+.testDiv {
+  background-color: green;
+  padding: 100px;
+  border: 25px solid black;
+  margin: 40px;
+  width: 400px;
+}
+
+#test1 {
+  /*position: relative;
+  left: 200px;*/
+
+  position:absolute;
+  left: 20px;
+  top: 20px;
+
+  position: fixed;
+
+}

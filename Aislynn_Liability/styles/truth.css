@@ -1,0 +1,50 @@
+body {
+  background-color: Midnightblue;
+}
+
+#first_truth {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Helvetica",sans-serif;
+  font-variant: small-caps;
+  cursor:none;
+}
+
+#second_truth {
+  text-align: center;
+  text-decoration:line-through;
+  cursor:wait;
+  position:absolute;
+  top: 1500px;
+  right: 500px;
+}
+
+#everyone {
+  text-decoration: line-through;
+  letter-spacing: 30px;
+  cursor:wait;
+
+}
+
+#back {
+  position:absolute;
+  top: 2500px;
+  right: 900px;
+  color: white;
+  cursor: w-resize;
+}
+
+#next {
+  position:absolute;
+  top: 2500px;
+  right: 500px;
+  color: white;
+  cursor: e-resize;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,58 @@
+body {
+  background-position: left;
+  background-color: black;
+}
+
+.slidein {
+  animation-duration: 8s;
+  animation-name: slidein;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:100%;
+    width:100%
+  }
+
+  to {
+    margin-left:-100%;
+    width:100%;
+  }
+}
+
+
+p {
+  color:red;
+  line-height: 110px;
+  font-size: 100px;
+  font-family: 'Nosifer', cursive;
+  text-shadow: 3px 3px 2px white, 5px 5px 2px darkred, 5px 5px 20px maroon;
+  cursor: grab;
+}
+
+
+#part1 {
+  margin-left:110%;
+  animation: 8s slidein 0s linear infinite running;
+}
+
+#part2 {
+  margin-left:110%;
+  animation: 8s slidein 3s linear infinite running;
+}
+#part3 {
+  margin-left:110%;
+  animation: 8s slidein 6s linear infinite running;
+}
+
+#part4 {
+  margin-left:110%;
+  animation: 8s slidein 9s linear infinite running;
+}
+
+#tear {
+  margin-left: 700px;
+  cursor: none;
+}

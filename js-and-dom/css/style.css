@@ -1,0 +1,12 @@
+#rect {
+  width:100px;
+  height:100px;
+  background-color: green;
+  transition: all 1s;
+  transition-delay: 1s;
+}
+
+#heading {
+  transition: all 1s;
+  transition-delay: 1s;
+}
