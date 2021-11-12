@@ -25,7 +25,7 @@ function draw() {
 
   // voila!
   console.log('ellipse is at ' + x + ', ' + y);
-  color(255,0,0);
+  fill(255,0,0);
   ellipse(x, y, 10, 10);
 
   // here you can decide how fast your circle
