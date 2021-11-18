@@ -1,8 +1,13 @@
 let angle = 0;     // the starting angle
 let radius = 100;  // distance to center
 
+let sliderCtl;
+
 function setup() {
   createCanvas(400, 400);
+  let canvas = createCanvas(400,400);
+  canvas.parent("myContainer");
+  sliderCtl = document.getElementById('hi');
 }
 
 function draw() {
@@ -25,12 +30,15 @@ function draw() {
 
   // voila!
   console.log('ellipse is at ' + x + ', ' + y);
-  fill(255,0,0);
+
+  let hia = int(sliderCtl.value);
+  fill(0,hia);
   ellipse(x, y, 10, 10);
 
   // here you can decide how fast your circle
   // should rotate
   angle++;
+
 }
 
 
@@ -38,7 +46,6 @@ function draw() {
 
 
 
-/*
 let roundButtom = document.getElementById('roundButtom');
 roundButtom.addEventListener('click',roundButtomClicked);
 
@@ -47,6 +54,15 @@ function roundButtomClicked {
   rectElem.style.borderRadius = '0px';
 }
 
+let elt = document.getElementById('btn');
+elt.addEventListener('click', clickFunction);
+
+function clickFunction() {
+  alert("Clicked!");
+}
+
+
+/*
 console.log('My file')
 
 function say(what) {

@@ -1,0 +1,111 @@
+body {
+  background-color: MediumPurple;
+}
+
+
+#heading {
+  color: AntiqueWhite;
+  text-align: center;
+  font-size: 150px;
+  font-family: 'Hi Melody', cursive;
+}
+
+#chooseColor {
+  font-family: 'Hi Melody', cursive;
+  text-align: center;
+  color: AntiqueWhite;
+  font-size: 50px;
+
+  padding: 50px;
+  border: 2px dotted AntiqueWhite;
+  border-radius: 100px;
+  border-width: thick;
+  margin: 50px;
+}
+
+
+#type {
+  display: inline-block;
+  width: 500px;
+  height: 250px;
+  border: 2px AntiqueWhite;
+  border-style:dashed;
+  border-width: thick;
+
+}
+#image {
+  display: inline-block;
+  width: 500px;
+  height: 250px;
+  border: 2px AntiqueWhite;
+  border-style:dashed;
+  border-width: thick;
+
+}
+
+#particles {
+  font-family: 'Hi Melody', cursive;
+  text-align: center;
+  color: AntiqueWhite;
+  font-size: 50px;
+
+  padding: 50px;
+  border: 2px AntiqueWhite;
+  border-style:double;
+  border-width: thick;
+  border-radius: 100px;
+  margin: 50px;
+}
+
+
+#particleNumber {
+  font-family: 'Hi Melody', cursive;
+  text-align: left;
+  color: AntiqueWhite;
+  font-size: 30px;
+  position: absolute;
+  left:30px;
+  top:1350px;
+}
+
+#collectorSpeed {
+  font-family: 'Hi Melody', cursive;
+  text-align: left;
+  color: AntiqueWhite;
+  font-size: 30px;
+  position: absolute;
+  left:30px;
+  top:1400px;
+}
+
+#reloadButton {
+    position: fixed;
+    right:10px;
+    bottom: 10px;
+    border-radius: 100px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#reloadButton:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#stayButton {
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+    border-radius: 50px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#stayButton:hover {
+    background-color: MediumPurple;
+    color: white;
+}
+
+#jPlanet {
+  cursor: grab;
+}

@@ -10,3 +10,7 @@
   transition: all 1s;
   transition-delay: 1s;
 }
+
+#myContainer {
+  margin:40px;
+}
