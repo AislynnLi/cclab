@@ -163,7 +163,7 @@ function setup() {
 }
 
 function keyPressed() {
-  if (keyCode === ENTER) {
+  if (keyCode === ENTER && nextPage) {
     window.open("secondPage.html","_parent")
   }
 }
