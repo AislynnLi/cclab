@@ -72,8 +72,8 @@ body{
   background-position:center;
   background-repeat: no-repeat;
   background-size: auto;
-  width:1800px;
-  height: 900px;
+  width:900px;
+  height: 450px;
   transition-delay: 4.5s;
   overflow: hidden;
   position: fixed;

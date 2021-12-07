@@ -338,11 +338,11 @@ class Itm {
       tryThird.style.visibility = "visible"
       tryThird.style.transform = "scale(80%)"
       try4.style.visibility = "visible"
-      try4.style.transform = "scale(50%)"
+      try4.style.transform = "scale(30%)"
       try5.style.visibility = "visible"
       try5.style.transform = "scale(80%)"
       try6.style.visibility = "visible"
-      try6.style.transform = "scale(50%)"
+      try6.style.transform = "scale(30%)"
     }
 
     if(time>180 && open && this.randomitms == "umbrella"){
