@@ -10,9 +10,10 @@ body {
   opacity: 0%;
   transition: 1s 0.5s;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   cursor: zoom-in;
   color: white;
+  text-shadow: 5px 5px 5px Chocolate;
 }
 
 .instruction:hover{
@@ -21,17 +22,17 @@ body {
 
 #firstInstruction {
   position: relative;
-  top: 150px;
+  top: 130px;
 }
 
 #secondInstruction {
   position: relative;
-  top: 250px;
+  top: 200px;
 }
 
 #thirdInstruction {
   position: relative;
-  top: 350px;
+  top: 280px;
 }
 
 .bubbleleft {
