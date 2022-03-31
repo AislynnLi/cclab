@@ -29,6 +29,7 @@ let result_drama = document.getElementById('result_drama');
 let result_kicking = document.getElementById('result_kicking');
 let result_amusement = document.getElementById('result_amusement');
 
+
 let grey = 0;
 let scores = [];
 

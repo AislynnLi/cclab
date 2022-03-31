@@ -13,7 +13,7 @@ body {
 #canvas {
   display:flex;
   text-align: center;
-  margin: 20px;
+  margin: 15px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -38,6 +38,25 @@ body {
   top:500px;
   left:20px;
   grid-template-columns: 100px;
+}
+
+#image1{
+  filter: blur(8px);
+}
+#julie{
+  filter: blur(8px);
+}
+#amusement{
+  filter: blur(8px);
+}
+#drama{
+  filter: blur(8px);
+}
+#image5{
+  filter: blur(8px);
+}
+#image6{
+  filter: blur(8px);
 }
 
 .media:hover {
