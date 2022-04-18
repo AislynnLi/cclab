@@ -263,6 +263,8 @@ if(mouseY>498 && mouseY<575){
       sum_dy = 0;
       num_dx_dy = 0;
 
+      let sum_confidence = 0;
+
       // for each keypoint ("nose", etc)
       for (let j = 0; j < keypoints.length; j++) {
         let keypoint_name = keypoints[j];
@@ -273,6 +275,8 @@ if(mouseY>498 && mouseY<575){
           sum_dx += image[keypoint_name].x - currentPose[keypoint_name].x;
           sum_dy += image[keypoint_name].y - currentPose[keypoint_name].y;
           num_dx_dy++;
+
+          sum_confidence += currentPose[keypoint_name].confidence;
         }
       }
 
@@ -280,6 +284,8 @@ if(mouseY>498 && mouseY<575){
 
       avg_dx = sum_dx / num_dx_dy;
       avg_dy = sum_dy / num_dx_dy;
+
+      avg_confidence = sum_confidence/num_dx_dy;
 
       // step 3. calculate the error taking into account this average shift of points
 
@@ -311,7 +317,7 @@ if(mouseY>498 && mouseY<575){
 
       if(i == 4){
         image1.style.filter = "blur(10px)";
-        score = map(error,250,800,100,0);
+        score = map(error,250,600,100,0);
         score = constrain(score, 0,100);
         score = floor(score);
         document.getElementById("error1").innerHTML = score + " %";
@@ -323,7 +329,7 @@ if(mouseY>498 && mouseY<575){
         if(mouseX<40.5 && mouseX>-63.5){
         let grey_scale = map(score,0,100,100,0);
         canvas.style.filter = "grayscale("+grey_scale+"%)";
-        document.getElementById("follow").innerHTML = "“Double Scissor Hands”"+"<br>"+"“Shy”";
+        document.getElementById("follow").innerHTML = "“Low Double Scissor Hands”";
       }
     }
 
@@ -333,7 +339,7 @@ if(mouseY>498 && mouseY<575){
         //   grey = score;
         // }
 
-        if(score >= 95 && score <= 100){
+        if(score >= 95 && score <= 100 && avg_confidence > 0.85){
         result_tiya.style.display = "inline";
         result_amusement.style.display = "none";
         result_jane.style.display = "none";
@@ -347,7 +353,7 @@ if(mouseY>498 && mouseY<575){
       }
 
       if(i == 0){
-        score = map(error,430,800,100,0);
+        score = map(error,430,700,100,0);
         score = constrain(score, 0,100);
         score = floor(score);
         document.getElementById("error6").innerHTML = score + " %";
@@ -359,12 +365,12 @@ if(mouseY>498 && mouseY<575){
         if(mouseX<701.5 && mouseX>600.5){
         let grey_scale = map(score,0,100,100,0);
         canvas.style.filter = "grayscale("+grey_scale+"%)";
-        document.getElementById("follow").innerHTML = "“Two-handed Blocking”"+"<br>"+"“Crossover And Parallel”";
+        document.getElementById("follow").innerHTML = "“Two-handed Blocking in Parallel”";
 
       }
     }
 
-        if(score >= 95 && score <= 100){
+        if(score >= 95 && score <= 100 && avg_confidence>0.85){
         result_kicking.style.display = "inline";
         result_amusement.style.display = "kicking";
         result_jane.style.display = "none";
@@ -377,7 +383,7 @@ if(mouseY>498 && mouseY<575){
       }
 
       if(i == 1){
-        score = map(error,430,1000,100,0);
+        score = map(error,430,900,100,0);
         score = constrain(score, 0,100);
         score = floor(score);
         document.getElementById("error4").innerHTML = score + " %";
@@ -392,7 +398,7 @@ if(mouseY>498 && mouseY<575){
       }
     }
 
-        if(score >= 95 && score <= 100){
+        if(score >= 95 && score <= 100 && avg_confidence>0.85){
         result_drama.style.display = "inline";
         result_amusement.style.display = "none";
         result_jane.style.display = "none";
@@ -405,7 +411,7 @@ if(mouseY>498 && mouseY<575){
       }
 
       if(i == 2){
-         score = map(error,350,800,100,0);
+         score = map(error,350,600,100,0);
          score = constrain(score, 0,100);
          score = floor(score);
          let blur_score = map(score,0,100,6,0);
@@ -416,12 +422,12 @@ if(mouseY>498 && mouseY<575){
          if(mouseX<170.5 && mouseX>71.5){
            let grey_scale = map(score,0,100,100,0);
            canvas.style.filter = "grayscale("+grey_scale+"%)";
-           document.getElementById("follow").innerHTML = "“Toothache”"+"<br>"+"“Thinking”";
+           document.getElementById("follow").innerHTML = "“Toothache”";
          }
        }
 
 
-        if(score >= 95 && score <= 100){
+        if(score >= 95 && score <= 100 && avg_confidence>0.85){
         result_julie.style.display = "inline";
         result_amusement.style.display = "none";
         result_jane.style.display = "none";
@@ -435,7 +441,7 @@ if(mouseY>498 && mouseY<575){
 
       }
       if(i == 3){
-        score = map(error,450,900,100,0);
+        score = map(error,450,700,100,0);
         score = constrain(score, 0,100);
         score = floor(score);
         let blur_score = map(score,0,100,6,0);
@@ -450,7 +456,7 @@ if(mouseY>498 && mouseY<575){
       }
     }
 
-        if(score >= 95 && score <= 100){
+        if(score >= 95 && score <= 100 && avg_confidence>0.85){
         result_jane.style.display = "inline";
         result_amusement.style.display = "none";
         result_tiya.style.display = "none";
@@ -463,7 +469,7 @@ if(mouseY>498 && mouseY<575){
       }
 
       if(i == 5){
-        score = map(error,350,800,100,0);
+        score = map(error,350,700,100,0);
         score = constrain(score, 0,100);
         score = floor(score);
         let blur_score = map(score,0,100,6,0);
@@ -474,11 +480,11 @@ if(mouseY>498 && mouseY<575){
         if(mouseX<302.5 && mouseX>205.5){
         let grey_scale = map(score,0,100,100,0);
         canvas.style.filter = "grayscale("+grey_scale+"%)";
-        document.getElementById("follow").innerHTML = "“Human Imitation Of Aircraft”"+"<br>"+"“Maintaining Balance”";
+        document.getElementById("follow").innerHTML = "“Imitation Of Side-flying Aircraft”";
       }
     }
 
-        if(score >= 95 && score <= 100){
+        if(score >= 95 && score <= 100 && avg_confidence>0.85){
         result_amusement.style.display = "inline";
         result_jane.style.display = "none";
         result_tiya.style.display = "none";

@@ -1,0 +1,80 @@
+#canvas {
+  text-align: center;
+  position: absolute;
+  top:25%;
+  left:25%;
+
+}
+
+body {
+  background-color: black;
+  font-family: 'Bebas Neue', cursive;
+}
+
+#clickRect {
+  position: absolute;
+  top:25%;
+  left:25%;
+  width: 640px;
+  height: 480px;
+}
+
+#instruction {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+
+  text-align: center;
+  position: relative;
+  top: 80px;
+  right: 40px;
+
+}
+
+.memory {
+  color:white;
+  visibility: hidden;
+  font-size: 70px;
+}
+
+.slidein {
+  animation-duration: 8s;
+  animation-name: slidein;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:100%;
+    width:100%
+  }
+
+  to {
+    margin-left:-100%;
+    width:100%;
+  }
+}
+
+#firstMemory {
+  position: absolute;
+  top:20%;
+  margin-left:110%;
+}
+
+#secondMemory {
+  position: absolute;
+  top:40%;
+  margin-left:110%;
+}
+#thirdMemory {
+  position: absolute;
+  top:60%;
+  margin-left:110%;
+}
+
+#fourthMemory {
+  position: absolute;
+  top:80%;
+  margin-left:110%;
+}

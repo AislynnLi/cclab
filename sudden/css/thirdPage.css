@@ -1,0 +1,131 @@
+body{
+  background-color: black;
+}
+
+#con > canvas{
+  position: fixed;
+  top:150px;
+  left: 200px;
+}
+
+.instruction {
+  opacity: 0%;
+  transition: 1s 0.5s;
+  text-align: center;
+  text-align: center;
+  font-size: 40px;
+  cursor: zoom-in;
+  color: white;
+  visibility: visible;
+}
+
+.instruction:hover{
+  opacity: 100%
+}
+
+
+#lastInstruction {
+  transition: 1s 0.5s;
+  text-align: center;
+  font-size: 300px;
+  color: white;
+
+  position: fixed;
+  top: 0px;
+  left: 0.5vw;
+  visibility: hidden;
+}
+
+
+p{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  word-spacing: 5px;
+  position: fixed;
+  top:50%;
+  right:100px;
+  color: white;
+}
+
+#firstInstruction {
+  text-align: center;
+  position: relative;
+  top: 30px;
+  right:0px;
+  /* left: 30px; */
+}
+
+#secondInstruction {
+  text-align: center;
+  position: relative;
+  top: 40px;
+  right:0px;
+}
+
+#thirdInstruction {
+  text-align: center;
+  position: relative;
+  top: 50px;
+  right:0px;
+}
+
+#fourthInstruction {
+  text-align: center;
+  position: relative;
+  top: 60px;
+  right:0px;
+}
+
+#fifthInstruction {
+  text-align: center;
+  position: relative;
+  top: 70px;
+  right:0px;
+}
+
+#sixthInstruction {
+  text-align: center;
+  position: relative;
+  top: 80px;
+  right:0px;
+}
+
+#clickRect{
+  position: fixed;
+  top:245px;
+  left: 295px;
+  width:210px;
+  height:305px;
+}
+
+#firstPara{
+  width: 700px;
+  text-overflow: clip;
+  visibility: hidden;
+  opacity: 0%;
+  transition: opacity 1s;
+}
+
+#secondPara{
+  width: 700px;
+  text-overflow: clip;
+  visibility: hidden;
+  opacity: 0%;
+  transition: opacity 1s;
+}
+
+#thirdPara{
+  width: 700px;
+  text-overflow: clip;
+  visibility: hidden;
+  opacity: 0%;
+  transition: opacity 1s;
+}
+
+#fourthPara{
+  width: 700px;
+  text-overflow: clip;
+  visibility: hidden;
+  opacity: 0%;
+  transition: opacity 1s;
+}

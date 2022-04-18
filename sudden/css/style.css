@@ -1,0 +1,203 @@
+body {
+  /* background-color: white; */
+  /*background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);*/
+  background-size:auto;
+  background-image: url(../asset/images/restaurant.jpeg);
+  font-family: 'Yuji Boku', serif;
+}
+
+.instruction {
+  opacity: 0%;
+  transition: 1s 0.5s;
+  text-align: center;
+  font-size: 50px;
+  cursor: zoom-in;
+  color: white;
+  text-shadow: 5px 5px 5px Chocolate;
+}
+
+.instruction:hover{
+  opacity: 100%
+}
+
+#firstInstruction {
+  position: relative;
+  top: 130px;
+}
+
+#secondInstruction {
+  position: relative;
+  top: 200px;
+}
+
+#thirdInstruction {
+  position: relative;
+  top: 280px;
+}
+
+.bubbleleft {
+  position: relative;
+  font-family: 'Yuji Boku', serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 300px;
+  background: Chocolate;
+  border-radius: 40px;
+  border-width: thick;
+  padding: 24px;
+  text-align: center;
+  color: #000;
+  box-shadow: 10px 10px 5px rgb(210, 80, 30) inset, 10px 10px 5px 3px DarkGoldenRod;
+}
+.bubbleright {
+  position: relative;
+  font-family: 'Yuji Boku', serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 300px;
+  background: DarkGoldenRod;
+  border-radius: 40px;
+  border-width: thick;
+  padding: 24px;
+  text-align: center;
+  color: #000;
+  box-shadow: -3px 10px 5px rgb(184, 150, 11) inset, -10px 10px 5px Chocolate;
+}
+
+.bubble-bottom-left::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid Chocolate;
+  border-right: 12px solid transparent;
+  border-top: 12px solid Chocolate;
+  border-bottom: 20px solid transparent;
+  left: 32px;
+  bottom: -24px;
+}
+
+.bubble-bottom-right::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 12px solid transparent;
+  border-right: 24px solid DarkGoldenRod;
+  border-top: 12px solid DarkGoldenRod;
+  border-bottom: 20px solid transparent;
+  right: 32px;
+  bottom: -24px;
+}
+
+.answers {
+  font-size: 18px;
+  background-color: inherit;
+  border-color: transparent;
+  width: inherit;
+  height: 30px;
+}
+
+#pageTurner {
+  color: black;
+  position:fixed;
+  bottom:10px;
+  right:500px;
+  visibility: hidden;
+}
+
+#first {
+  position: absolute;
+  top:800px;
+  left:-50px;
+  opacity: 0%;
+  transition: all 3s;
+}
+
+#firstAnswer {
+  position: absolute;
+  top:1200px;
+  right:-50px;
+  opacity: 0%;
+  transition: all 3s;
+}
+
+#second {
+  position: absolute;
+  top: 1600px;
+  left:-50px;
+  opacity: 0%;
+  transition: all 3s;
+}
+
+#secondAnswer {
+  position: absolute;
+  top: 2000px;
+  right:-50px;
+  opacity: 0%;
+  transition: all 3s;
+}
+
+#third {
+  position: absolute;
+  top: 2400px;
+  left: -50px;
+  opacity: 0%;
+  transition: all 3s;
+}
+
+#thirdAnswer {
+  position: absolute;
+  top: 2800px;
+  right:-50px;
+  opacity: 0%;
+  transition: all 3s;
+}
+
+#fourth {
+  position: absolute;
+  top: 3600px;
+  left: -50px;
+  opacity: 0%;
+  transition: all 3s;
+}
+
+#fourthAnswer {
+  position: absolute;
+  top: 3200px;
+  right:-50px;
+  opacity: 0%;
+  transition: all 3s;
+}
+
+#fifth {
+  position: absolute;
+  top: 4000px;
+  left: -50px;
+  opacity: 0%;
+  transition: all 3s;
+}
+
+#fifthAnswer {
+  position: absolute;
+  top: 4400px;
+  right:-50px;
+  opacity: 0%;
+  transition: all 3s;
+}
+
+#sixth {
+  position: absolute;
+  top: 4800px;
+  left: -50px;
+  opacity: 0%;
+  transition: all 3s;
+}
+
+#sixthAnswer {
+  position: absolute;
+  top: 5200px;
+  right:-50px;
+  opacity: 0%;
+  transition: all 3s;
+}
